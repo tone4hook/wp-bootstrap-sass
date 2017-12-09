@@ -46,11 +46,10 @@
 	);
 
 	$comments_args = array(
-			'class_submit'      => 'btn btn-primary',
-      'comment_field' => '<p class="comment-form-comment"><div class="form-group"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br/><textarea id="comment" name="comment" aria-required="true" class="form-control" rows="3"></textarea></div></p>',
-      'fields' => apply_filters( 'comment_form_default_fields', $fields ),
+		'class_form' => 'well', 'class_submit' => 'btn btn-primary', 
+		'comment_field' => '<p class="comment-form-comment"><div class="form-group"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br/><textarea id="comment" name="comment" aria-required="true" class="form-control" rows="3"></textarea></div></p>',
+		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 	);
 ?>
-<div class="comments well">
+
 <?php comment_form( $comments_args ); ?>
-</div>
