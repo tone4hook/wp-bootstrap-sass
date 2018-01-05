@@ -18,4 +18,5 @@
 			<?php get_sidebar(); ?>
 		</div><!-- /.row -->
 	</div><!-- /.container -->
+</main>
 <?php get_footer(); ?>
